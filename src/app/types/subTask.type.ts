@@ -1,7 +1,7 @@
 import type { Types } from "mongoose";
 export interface SubTask {
   _id?: string;
-  taskId: Types.ObjectId | null;
+  taskId: Types.ObjectId;
   title: string;
   description?: string;
   status: "TODO" | "IN_PROGRESS" | "DONE" | "BACKLOG";

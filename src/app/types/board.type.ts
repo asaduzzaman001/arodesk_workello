@@ -2,10 +2,10 @@ import { Types } from "mongoose";
 
 export interface Board {
   _id?: string;
-  workspaceId: Types.ObjectId | null;
+  workspaceId: Types.ObjectId;
   name: string;
   description: string;
-  createdBy: Types.ObjectId | null;
+  createdBy: Types.ObjectId;
   color?: string;
   icon?: string;
   isArchived: boolean;

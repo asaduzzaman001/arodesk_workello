@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 
 export interface Activity {
   _id?: string;
-  workspaceId: Types.ObjectId | null;
+  workspaceId: Types.ObjectId;
   boardId?: Types.ObjectId | null;
   taskId?: Types.ObjectId | null;
   subTaskId?: Types.ObjectId | null;

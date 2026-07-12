@@ -6,7 +6,7 @@ export interface Workspace {
   description: string;
   icon?: string;
   visibility?: "PUBLIC" | "PRIVATE";
-  ownerId: Types.ObjectId | null;
+  ownerId: Types.ObjectId;
   isArchived: boolean;
   createdAt?: Date;
   updatedAt?: Date;

@@ -2,9 +2,9 @@ import { Types } from "mongoose";
 
 export interface Task {
   _id?: string;
-  boardId: Types.ObjectId | null;
-  assignedBy: Types.ObjectId | null;
-  assignedTo: Types.ObjectId | null;
+  boardId: Types.ObjectId;
+  assignedBy: Types.ObjectId;
+  assignedTo: Types.ObjectId;
   title: string;
   description?: string;
   priority: "LOW" | "MEDIUM" | "HIGH";
