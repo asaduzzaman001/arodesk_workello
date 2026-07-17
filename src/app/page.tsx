@@ -1,11 +1,11 @@
 import { auth } from "@/auth";
 import SignIn from "@/components/SignIn";
 import Image from "next/image";
-import { redirect } from "next/navigation";
+// import { redirect } from "next/navigation";
 
 export default async function Home() {
   const session = await auth();
-  if (!session?.user) redirect("/");
+  // if (!session?.user) redirect("/");
   return (
     <div>
       {session?.user ? (
