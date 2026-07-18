@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
 ];
 export default function Navbar(): React.ReactNode {
   return (
-    <nav className="sticky top-0 left-0 z-10 flex items-center justify-between border-b-2 border-border px-5 py-2 md:px-10 md:py-5 lg:px-20 xl:px-40">
+    <nav className="flex items-center justify-between border-b-2 border-border px-5 py-2 md:px-10 md:py-5 lg:px-20 xl:px-40">
       <div className="text-2xl font-bold text-primary">Workello</div>
       <div className="flex items-center gap-5">
         {navLinks.map((link) => (
